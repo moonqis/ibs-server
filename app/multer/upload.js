@@ -2,7 +2,7 @@
 const multerConfig = require('./multerConfig')
 
 // 上传到服务器地址
-const BaseURL = 'http://192.168.43.114:3000' 
+const BaseURL = 'http://localhost:3000' 
 // 上传到服务器的目录
 const imgPath = '/public/'
 
