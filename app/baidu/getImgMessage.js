@@ -6,8 +6,7 @@ const axiosInstance = axios.create({
     },
     timeout: 10000,
 })
-const access_token =
-    "24.aeb2c8a9f3c78f379c480e8b4a1f1a15.2592000.1684508574.282335-32601217";
+const access_token = "";//token
 exports.create = (req, res) => {
     console.log(req.body)
     let x = '{"image":"' + req.body.image + '","scenes":["advanced_general","dishs","ingredient"]}'
