@@ -60,8 +60,8 @@ exports.findAll = (req, res) => {
 var COS = require('cos-nodejs-sdk-v5')
 
 const cos = new COS({
-  SecretId: 'AKIDc1C9qGQM5ZLF4nU2MQM4bxAEE0XrDWwD', // 身份识别ID
-  SecretKey: 'CXgXCfwy2woaGuOhq0wcO0aCjHgqkNp4' // 身份秘钥
+  SecretId: '', // 身份识别ID
+  SecretKey: '' // 身份秘钥
 })
 //修改图片
 exports.editUserImg = (req, res) => {
@@ -72,7 +72,7 @@ exports.editUserImg = (req, res) => {
     file.filename=Date.now() + '.' + fileFormat[fileFormat.length - 1]
     console.log(file.filename)
     cos.putObject({
-      Bucket: 'mingxlab-1258665547', /* 存储桶 */
+      Bucket: 'mingxlab-1111111', /* 存储桶 */
       Region: 'ap-shanghai', /* 存储桶所在地域，必须字段 */
       Key: 'ibs-food/food-image/'+file.filename, /* 文件名 */
       // StorageClass: 'STANDARD', // 上传模式, 标准模式
